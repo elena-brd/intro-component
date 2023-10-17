@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import 'utilities';
+@import 'buttons';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1140px;
+    width: 100%;
+    background-image: url('../images/bg-intro-desktop.png');
+    background-color: $primary-red;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+}
+
+.about {
+    color: #fff;
+    width: 50%;
+
+    h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+
+.card-form {
+    .trial-text {
+        flex: 1;
+        margin-bottom: 1.2rem;
+        background: $accent-blue;
+        padding: 0.9rem 0;
+        border-radius: 8px;
+        box-shadow: 0 7px 0px rgba($color: #3e3c49, $alpha: 0.4);
+    }
+
+    p {
+        color: #fff;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    span {
+        font-weight: 600;
+        letter-spacing: 0.9px;
+    }
+}
+
+.card {
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 7px 0px rgba($color: #3e3c49, $alpha: 0.4);
+    padding: 2rem;
+
+    .form-input {
+        input {
+            width: 100%;
+            border: $neutral-grayish-blue 1px solid;
+            border-radius: 4px;
+            padding: 0.9rem;
+            color: $neutral-dark-blue;
+        }
+
+        .input-box {
+            margin-bottom: 1rem;
+        }
+
+    }
+}
+
+.terms-services {
+    p {
+        color: #9a9a9a;
+        font-size: 0.7rem;
+        margin: 1rem 2rem 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $primary-red;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+}
+
+
+@import 'mobile';
